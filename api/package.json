@@ -1,0 +1,28 @@
+{
+  "name": "techman2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariapcaleffi/techman2025.git"
+  },
+  "keywords": [],
+  "author": "mariapcaleffi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariapcaleffi/techman2025/issues"
+  },
+  "homepage": "https://github.com/mariapcaleffi/techman2025#readme",
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security"
+  }
+}

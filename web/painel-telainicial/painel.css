@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Cal Sans', sans-serif;
+  background-color: #f4f6fa;
+  color: #1b2a49;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background-color: #1b2a49;
+}
+
+header img {
+  max-width: 160px;
+  height: auto;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+header nav a:hover {
+  color: #90c2e7;
+}
+
+#equipamentos-list {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.equipamento-box {
+  display: flex;
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background: #fff;
+  gap: 12px;
+}
+
+.equipamento-img {
+  width: 140px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.equipamento-info {
+  flex: 1;
+  font-size: 14px;
+}
+
+.equipamento-titulo {
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #1b2a49;
+}
+
+.equipamento-desc {
+  color: #475569;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.equipamento-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.equipamento-actions button img {
+  width: 18px;
+  height: 18px;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 6px;
+  padding: 16px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  display: none;
+}
+
+#modal h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #1b2a49;
+}
+
+#modal img {
+  display: block;
+  margin: 10px auto;
+  max-height: 180px;
+  border-radius: 6px;
+}
+
+#fechar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.lista-comentarios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comentario-item {
+  border-top: 1px solid #e2e8f0;
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+#form-comentario {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#comentario-texto,
+#comentario-perfil {
+  padding: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+#btn-enviar-comentario {
+  padding: 8px;
+  background: #1b2a49;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btn-enviar-comentario:hover {
+  background: #13203a;
+}
+
+.comentario-item .deletar-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.comentario-item .deletar-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+#modal-novo-equip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modal-novo-equip .modal-content {
+  background: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  width: 90%;
+  max-width: 400px;
+}
+
+#modal-novo-equip h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #1b2a49;
+  text-align: center;
+}
+
+#modal-novo-equip input[type="text"],
+#modal-novo-equip input[type="url"],
+#modal-novo-equip textarea,
+#modal-novo-equip input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+#modal-novo-equip button {
+  padding: 8px;
+  background: #1b2a49;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#modal-novo-equip button:hover {
+  background: #13203a;
+}
+
+#modal-novo-equip .fechar-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
